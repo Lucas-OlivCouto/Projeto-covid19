@@ -2,7 +2,9 @@ source("UI/ui_overview.R", local = TRUE)
 source("UI/ui_visao_geral_brasil.R", local = TRUE)
 source("UI/ui_graficos.R", local = TRUE)
 source("UI/ui_mobilidade.R", local = TRUE)
+source("UI/ui_simulacoes.R", local = TRUE)
 source("UI/ui_sobre.R", local = TRUE)
+source("UI/ui_Link_uteis.R", local = TRUE)
 source("UI/ui_tabelafull.R", local = TRUE)
 
 ui <- fluidPage(
@@ -23,6 +25,8 @@ ui <- fluidPage(
     tabPanel("Tabela", page_tabelafull, value = "page_tabelafull"),
     tabPanel("Gráficos", page_graficos, value = "page_graficos"),
     tabPanel("Dados de mobilidade", page_mob, value = "page_mob"),
-    tabPanel("Sobre", page_sobre, value = "page_sobre")
+    tabPanel("Simulações", page_sim, value = "page_sim"),
+    tabPanel("Sobre", page_sobre, value = "page_sobre"),
+    tabPanel("Links úteis", page_linkuteis, value = "page_linkuteis")
   )
 )
